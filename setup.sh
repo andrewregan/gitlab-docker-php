@@ -20,6 +20,7 @@ apt-get install -yqq git php7.0-mysql npm nodejs
 npm install -g csslint
 npm install -g jslint
 npm install -g html5-lint
+npm install -g gulp
 npm install -g gulp-cli
 npm install -g gulp-html5-lint
 ln -s "$(which nodejs)" /usr/bin/node
