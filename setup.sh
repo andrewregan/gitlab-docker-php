@@ -14,15 +14,17 @@
 #apt-get install -y mysql-server mysql-client
 
 # install dependencies tools
-apt-get install -y git php7.0-mysql npm nodejs python python-pip
+apt-get install -yqq git php7.0-mysql npm nodejs
 
 # install css and js testings tools
 npm install -g csslint
 npm install -g jslint
 ln -s "$(which nodejs)" /usr/bin/node
 
-# install html testing tool
-pip install html5validator
+# install html5-tidy
+curl http://binaries.html-tidy.org/binaries/tidy-5.2.0/tidy-5.2.0-64bit.deb -o tidy.deb
+dpkg -i tidy.deb
+rm tidy.deb
 
 # install php composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
