@@ -16,6 +16,7 @@
 # install testing tools
 apt-get install -y git php7.0-mysql npm nodejs
 npm install -g csslint
+npm install -g jslint
 ln -s "$(which nodejs)" /usr/bin/node
 
 # install php composer
